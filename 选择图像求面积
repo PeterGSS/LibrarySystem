@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+
+public class work3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			System.out.println(" 请选择图形：1 矩形， 2 三角形， 3圆 ");
+			Scanner g=new Scanner(System.in);
+			int gh=g.nextInt();
+			switch(gh){
+			case 1:
+				System.out.println("请输入矩形的宽");
+				Scanner w=new Scanner(System.in);
+				int wi=w.nextInt();
+				System.out.println("请输入矩形的高");
+				Scanner h=new Scanner(System.in);
+				int hi=h.nextInt();
+				System.out.println("矩形的面积是:"+wi*hi);
+				break;
+			case 2:
+				System.out.println("请输入三角形的底");
+				Scanner b=new Scanner(System.in);
+				int ba=b.nextInt();
+				System.out.println("请输入三角形的高");
+				Scanner i=new Scanner(System.in);
+				int ig=i.nextInt();
+				System.out.println("三角形的面积是:"+ba*ig);
+				break;
+			case 3:
+				System.out.println("请输入圆形的半径");
+				Scanner r=new Scanner(System.in);
+				double rr=r.nextDouble();
+				System.out.println("三角形的面积是:"+3.14*rr*rr);
+				break;
+			default:
+				System.out.println("请重新输入:");break;
+				
+			
+			}
+		
+			
+	}
+	
+
+}
