@@ -1,0 +1,21 @@
+package com.lib.dao;
+
+import java.util.List;
+
+import com.lib.po.Page;
+import com.lib.view.bookview;
+
+public interface bookviewDao {
+	//查找要显示在页面的信息集合,失败返回list.size()=0
+	public List<bookview> findBookviewforShow(Page page);
+	//查询bookview信息总数
+	public int findBookviewCount();
+	//查找全部的bookview
+	public List<bookview> findAllBookview();
+	//按条形码搜书，不存在返回list.size()=0
+	public List<bookview> findBookviewByBarcode(String barcode);
+	//按书名搜书，不存在返回list.size()=0
+	public List<bookview> findBookviewByName(String name);
+	//按类型搜书，不存在返回list.size()=0
+	public List<bookview> findBookviewByType(String type);
+}
